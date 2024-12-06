@@ -57,7 +57,7 @@ static	int	ft_putnbr_base(long long nbr, int base, int uppercase)
 	return (count);
 }
 
-static	int	ft_putnbr_base_pointer(size_t nbr, int base, int uppercase)
+static	int	ft_putnbr_base_pointer(unsigned long nbr, int base, int uppercase)
 {
 	char *key;
 	int count;
@@ -130,12 +130,9 @@ int	ft_printf(const char *format, ...)
 	return(count);
 }
 
-int main()
-{
-	int a = ft_printf("%c %what %%a %s %p %d %i %u %x %X \n", 'a', "ayoub", "ayoub", 123, 123, -1000, 1000, 1000);
-	int b = printf("%c %what %%a %s %p %d %i %u %x %X \n", 'a', "ayoub", "ayoub", 123, 123, -1000, 1000, 1000);
-	// int a = ft_printf("hey %", "hey");
-	// char array[10] = {'h'};
-	// int b = printf("hey %","hey");
-	printf("%d\n%d\n", a, b);
-}
+// int main()
+// {
+// 	int a = ft_printf("%c %what %%a %s %p %d %i %u %x %X %");
+// 	int b = printf("%c %what %%a %s %p %d %i %u %x %X %");
+// 	printf("%d\n%d\n", b);
+// }
